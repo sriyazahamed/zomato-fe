@@ -1,0 +1,152 @@
+.images {
+
+    height: 411px;
+    border-radius: 0%;
+    object-fit: cover;
+}
+
+.restName {
+    margin-top: 40px;
+    font-family: Poppins;
+    font-size: 30px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.53;
+    letter-spacing: normal;
+    text-align: left;
+    color: #192f60;
+}
+
+.orderBtn {
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff;
+}
+
+
+.tabName {
+
+    height: 25px;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #192f60;
+}
+
+.react-tabs__tab {
+    border: none;
+    margin-right:38px;
+}
+
+@media screen and (min-width:768px) {
+    .react-tabs__tab{
+        margin-right:76px;
+    }
+}
+
+.react-tabs__tab--selected {
+    margin-bottom: -2px;
+    border-bottom: solid 3px #ce0505;
+}
+
+.react-tabs__tab-list {
+    border-bottom: solid 3px #d2d9e6;
+}
+
+.abtTitle {
+    font-family: Poppins;
+    font-size: 22px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #192f60;
+}
+
+.abtSubTitle {
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #192f60;
+
+}
+
+.abtElem {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.88;
+    letter-spacing: normal;
+    text-align: left;
+    color: #192f60;
+
+}
+
+.address {
+    width: 359px;
+    height: 48px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.56;
+    letter-spacing: normal;
+    text-align: left;
+    color: #636f88;
+}
+
+.phNo {
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #f67082;
+}
+
+.phNoTitle {
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #192f60;
+}
+.carousel .control-dots{
+    z-index: 0;
+}
+
+.carousel .slider.animated{
+    z-index: -1;
+}
+.carousel.carousel-slider .control-arrow{
+    z-index: 0;
+}

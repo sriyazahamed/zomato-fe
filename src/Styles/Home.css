@@ -1,0 +1,246 @@
+body{
+    background-color: #fbfbfb;
+}
+.home-img{
+    height: 565px;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0px;
+    z-index: -1;
+}
+
+.gradient{
+    position: absolute;
+    top: 0px;
+    background-image: linear-gradient(to bottom, rgba(157, 14, 14, 0), #4f0707f0);
+}
+.login
+{
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.56;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fff;
+  
+}
+
+.top-portion{
+    position: absolute;
+    top: 29px;
+}
+
+.mainLogo{
+    width: 68px;
+    height: 99px;
+    font-family: Poppins;
+    font-size: 80px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.51;
+    letter-spacing: normal;
+    text-align: left;
+    padding-left: 40px;
+    padding-top: 11px;
+    color: #eb2929;
+    width: 147px;
+    height: 147px;
+    border: solid 1px #707070;
+    border-radius: 73.5px;
+    background-color: #fff;
+}
+
+.find-head{
+    width: fit-content;
+    font-family: Poppins;
+    font-size: 36px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.53;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff;
+}
+
+.search-opt{
+    height: 50px;
+    background-color: #fff;
+    font-family: Poppins;
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.53;
+  letter-spacing: normal;
+  text-align: left;
+  color: #636f88;
+}
+
+.bottom{
+    position: relative;
+    top: 515px;
+}
+.quick{
+  font-family: Poppins;
+  font-size: 30px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.53;
+  letter-spacing: normal;
+  text-align: left;
+  color: #192f60;
+}
+
+.discov{
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #8c96ab;
+}
+
+
+.category{
+  padding: 0 34px 0 0;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  background-color: #fff;
+}
+
+.category-image{
+    width: 160px;
+    object-fit: cover;
+    height: 160px;
+}
+  
+  .category-name{
+    width: 88px;
+    height: 25px;
+    margin: 25px 49px 4px 29px;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #192f60;
+  }
+  
+  .category-description{
+      width: 137px;
+      height: 62px;
+      margin: 4px 0 44px 29px;
+      font-family: Poppins;
+      font-size: 14px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.5;
+      letter-spacing: normal;
+      text-align: left;
+      color: #8c96ab;
+  }
+
+@media screen and (max-width:500px) {
+  .home-img{
+    height: 650px;
+  }
+  .search-city{
+    max-width: 321.36px;
+    min-width: 321.36px;
+  }
+
+}
+
+.box{
+  max-width: 330px;
+  min-width: 330px;
+}
+
+.suggestionBox {
+  z-index: 100;
+  position: absolute;
+  list-style: none;
+  padding: 0;
+  border-radius: 3px;
+  top: 59px;
+  left: 0;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  background-color: #fff;
+  margin-left: 21px;
+  width: 336px;
+}
+
+.suggestionItem {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  padding: 15px;
+  border-bottom: 1px solid lightgray;
+  cursor: pointer;
+}
+
+.suggestionImage {
+  display: inline-block;
+}
+
+.suggestionImage img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.suggestionText {
+  display: inline-block;
+  margin-left: 17px;
+  text-align: left;
+}
+
+.suggestionTextName {
+  height: 23px;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.88;
+  letter-spacing: normal;
+  text-align: left;
+  color: #192f60;
+}
+
+.suggestionTextLocality {
+  height: 17px;
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.5;
+  letter-spacing: normal;
+  text-align: left;
+  color: #636f88;
+}
+
+@media screen and (max-width:437px) {
+  .orderButton{
+    visibility:hidden;
+  }
+  .suggestionBox{
+    width:fit-content;
+  }
+}
+

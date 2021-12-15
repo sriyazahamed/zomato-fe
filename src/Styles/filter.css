@@ -1,0 +1,249 @@
+.topic{
+    font-family: Poppins;
+    font-size: 36px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.53;
+    letter-spacing: normal;
+    text-align: left;
+    color: #192f60;
+  }
+  
+  .filter-section{
+    width: 260px;
+    height: 776px;
+    padding: 17px 25px 31px 26px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    background-color: #fff;
+  }
+  
+  .result{
+    height: fit-content;
+    padding: 25px 32.6px 20px 35px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    background-color: #fff;
+  }
+  
+  .red{
+    background-color: red;
+  }
+  
+  .blue{
+    background-color: blue;
+  }
+  
+  .filter-sort-head{
+    height: 25px;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #192f60;
+  }
+  
+  .filter-subhead{
+    height: 20px;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #192f60;
+  }
+  #select-location-options{
+    width: 208px;
+    height: 38px;
+    padding: 8px 16.7px 7px 15px;
+    border-radius: 3px;
+    border: solid 1px #8c96ab;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #8c96ab;
+  }
+  
+  
+  input {
+    height: 18px;
+    width: 18px;
+  }
+  
+  label{
+    position: relative;
+    bottom: 4px;
+    height: 20px;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: normal; 
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #8c96ab;
+  }
+  
+  .filterImg{
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    margin: 0 41px 31px 0;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+  
+  .restaurant-name{
+    height: 43px;
+    font-family: Poppins;
+    font-size: 28px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.53;
+    letter-spacing: normal;
+    text-align: left;
+    color: #192f60;
+  }
+  
+  .place{
+  
+    height: 23px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.88;
+    letter-spacing: normal;
+    text-align: left;
+    color: #192f60;
+  }
+  
+  .adrs{
+    height: fit-content;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.88;
+    letter-spacing: normal;
+    text-align: left;
+    color: #636f88;
+  }
+  
+  .cuisine-cost{
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.88;
+    letter-spacing: normal;
+    text-align: left;
+    color: #636f88;
+  }
+  
+  .cuisine-cost-result{
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.88;
+    letter-spacing: normal;
+    text-align: left;
+    color: #192f60;
+  }
+  
+  .pages{
+    height:45px;
+    width: 45px;
+    border-radius: 12px;
+    opacity: 0.4;
+    border: solid 2px #8c96ab;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+  }
+  
+  @media screen  and (max-width:359px) {
+    .heading{
+      height: 110px;
+    }
+  }
+  
+  @media screen  and (max-width:310px) {
+    .create-acnt{
+      margin-top: 8px;
+    }
+  }
+  
+  @media screen  and (max-width:992px) and (min-width:768px)   {
+    .filter-section{
+      width: 400px;
+    }
+    .filter-cont{
+      width: fit-content;
+      margin-left: 30px;
+    }
+  }
+  
+  @media screen  and (max-width:576px) {
+    .result{
+      width: 95%;
+      margin-left: 3px;
+    }
+    .specific-result{
+      width: 70%;
+    }
+  
+  }
+  
+  @media screen and (max-width:1200px) and (min-width:992px) {
+    .result-section{
+      width: 604px;
+    }
+  }
+  
+  @media screen and (max-width:768px) {
+    filterImg{
+      margin: 0% 37% 0% 37%;
+    }
+    .res-right{
+      margin-bottom: 27px;
+    }
+  }
+  @media screen  and (max-width:576px)  {
+  
+    .restaurant-name{
+      font-size: medium;
+    }
+  
+  }
+  
+  @media screen and (max-width:421px) {
+    .pages{
+      height:30px;
+      width: 30px;
+      font-size: large;
+      border-radius: 6px;
+      opacity: 0.4;
+      padding: 0px;
+    }
+  }
