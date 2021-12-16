@@ -12,11 +12,11 @@ const API_URL = require('../constants').API_URL;
 const menuStyle = {
     content: {
         marginTop: '150px',
-        maxWidth:'800px',
+        maxWidth: '800px',
         background: 'white',
         zIndex: '10000000',
-        padding:'12px',
-        border:'groove'
+        padding: '12px',
+        border: 'groove'
     }
 }
 
@@ -103,21 +103,21 @@ export default class Details extends Component {
             input.setAttribute('name', key);
             input.setAttribute('value', this.stringifyValue(params[key]));
             form.appendChild(input);
-        })  
+        })
         return form;
     }
 
     postTheInformationToPaytm = (info) => {
-        // build the form data
+
         const form = this.buildForm(info);
 
-        // attach in the request body
+
         document.body.appendChild(form);
 
-        // submit the form
+
         form.submit();
 
-        // destroy the form
+
         form.remove();
 
     }
@@ -131,18 +131,15 @@ export default class Details extends Component {
             },
             body: JSON.stringify(data)
         })
-        .then(resp => {
-            return resp.json();
-        })
-        .catch(err => {
-            console.log(err);
-        });
+            .then(resp => {
+                return resp.json();
+            })
+            .catch(err => {
+                console.log(err);
+            });
     }
 
     paymentHandler = () => {
-        // add the logic to make the payment
-
-        // (1) make API call to the BE and get the payment checksum
         const data = {
             amount: this.state.totalPrice,
             email: 'sriyazahamed29@gmail.com',
@@ -151,7 +148,6 @@ export default class Details extends Component {
 
         this.getChecksum(data)
             .then(result => {
-                // (2) go to the paytm website, on the paytm website, finish the payment
                 let information = {
                     action: 'https://securegw-stage.paytm.in/order/process',
                     params: result
@@ -231,7 +227,7 @@ export default class Details extends Component {
                         Menu
                         <button onClick={this.closeMenu} className="btn btn-outline-danger float-end">X</button>
                     </h2>
-                    {restaurant?<h5>{restaurant[0].name}</h5>:null}
+                    {restaurant ? <h5>{restaurant[0].name}</h5> : null}
                     <ul className="menu">
                         {
                             menu

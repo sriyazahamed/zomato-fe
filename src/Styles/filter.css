@@ -130,6 +130,7 @@
     letter-spacing: normal;
     text-align: left;
     color: #192f60;
+    min-width: 273px;
   }
   
   .adrs{

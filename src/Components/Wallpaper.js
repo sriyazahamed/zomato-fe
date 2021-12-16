@@ -87,11 +87,11 @@ class Wallpaper extends Component {
                                     <div className="suggestionImage col-1">
                                         <img src={item.thumb} alt="not found" />
                                     </div>
-                                    <div className="suggestionText col-7 ms-4 me-2">
-                                        <div className="suggestionTextName">
+                                    <div className="suggestionText col-7 ps-2 ms-4 me-2">
+                                        <div className="suggestionTextName row">
                                             {item.name}
                                         </div>
-                                        <div className="suggestionTextLocality">
+                                        <div className="suggestionTextLocality row">
                                             {item.locality}
                                         </div>
                                     </div>
@@ -157,7 +157,7 @@ class Wallpaper extends Component {
                 <img src={require('../Assets/homeMain.png').default} className="home-img wallpaper img-fluid" alt="No img" />
                 <div className=" home-img  img-fluid gradient "></div>
                 <div className="top-portion container-fluid">
-                    <div className="row justify-content-center">
+                    <div className="row justify-content-center" style={{marginTop:"30px"}}>
                         <div className="mainLogo mt-lg-0 mt-5">e!</div>
                     </div>
                     <br />

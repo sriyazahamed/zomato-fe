@@ -79,17 +79,17 @@ class Filter extends Component {
         if (sortOrder !== undefined) {
             req.sort = sortOrder;
         }
-       
+
         axios({
             method: 'POST',
             url: `${API_URL}/filterRestaurants`,
             headers: { 'Content-Type': 'application/json' },
             data: req
         }
-        
+
         ).then(result => {
-            const {  pageSize,page,totalResultCount,filteredRestaurantList } = result.data;
-            
+            const { pageSize, page, totalResultCount, filteredRestaurantList } = result.data;
+
             this.setState({
                 pageNo: page,
                 restaurantList: filteredRestaurantList,
@@ -100,13 +100,13 @@ class Filter extends Component {
             console.log(err);
         });
     }
-    
-    getPages=()=>{
-        const { noOfPages,totalResults,restaurantList } = this.state;
+
+    getPages = () => {
+        const { noOfPages, totalResults, restaurantList } = this.state;
         let pages = [];
         for (let i = 0; i < noOfPages; i++) {
             pages.push(
-                <span key={i} className="pages btn btn-outline-dark mx-1" onClick={() => this.handlePageChange(i + 1)}>{ i + 1 }</span>
+                <span key={i} className="pages btn btn-outline-dark mx-1" onClick={() => this.handlePageChange(i + 1)}>{i + 1}</span>
             )
         }
         return pages;
@@ -115,7 +115,7 @@ class Filter extends Component {
     handlePageChange = (page) => {
         const { noOfPages } = this.state;
         if (page < 1) return;
-        if(page>noOfPages) return;
+        if (page > noOfPages) return;
         this.setState({
             pageNo: page
         });
@@ -207,31 +207,31 @@ class Filter extends Component {
                             <div className="filter-cont filter-subhead my-3 mt-4">Cuisine</div>
                             <div className="filter-cont Cuisine-contents">
                                 <div className="filter-cont my-3">
-                                    <input type="checkbox" onChange={(e) => this.handleCuisineChange(e, 'North Indian')}/>
+                                    <input type="checkbox" onChange={(e) => this.handleCuisineChange(e, 'North Indian')} />
                                     <label className="ms-1">
                                         North Indian
                                     </label>
                                 </div>
                                 <div className="filter-cont my-3">
-                                    <input type="checkbox" onChange={(e) => this.handleCuisineChange(e, 'South Indian')}/>
+                                    <input type="checkbox" onChange={(e) => this.handleCuisineChange(e, 'South Indian')} />
                                     <label className="ms-1">
                                         South Indian
                                     </label>
                                 </div>
                                 <div className="filter-cont my-3">
-                                    <input type="checkbox" onChange={(e) => this.handleCuisineChange(e, 'Chinese')} /> 
+                                    <input type="checkbox" onChange={(e) => this.handleCuisineChange(e, 'Chinese')} />
                                     <label className="ms-1">
                                         Chinese
                                     </label>
                                 </div>
                                 <div className="filter-cont my-3">
-                                    <input type="checkbox" onChange={(e) => this.handleCuisineChange(e, 'Fast Food')}/>
+                                    <input type="checkbox" onChange={(e) => this.handleCuisineChange(e, 'Fast Food')} />
                                     <label className="ms-1">
                                         Fast Food
                                     </label>
                                 </div>
                                 <div className="filter-cont my-3">
-                                    <input type="checkbox" onChange={(e) => this.handleCuisineChange(e, 'Street Food')}/>
+                                    <input type="checkbox" onChange={(e) => this.handleCuisineChange(e, 'Street Food')} />
                                     <label className="ms-1">
                                         Street Food
                                     </label>
@@ -282,31 +282,29 @@ class Filter extends Component {
                                     ?
                                     restaurantList.map((item) => {
                                         return (
-                                            <div className="row result mb-4" style={{cursor:"pointer"}} onClick={() => this.goToRestaurant(item)}>
-                                                <div className="specific-result row mt-1">
-                                                    <div className="col-md-3">
+                                            <div className="container result mb-4" style={{ cursor: "pointer" }} onClick={() => this.goToRestaurant(item)}>
+                                                <div className="specific-result row mt-1 ms-md-0 ms-3 ms-sm-2">
+                                                    <div className="col-md-3 col-12">
                                                         <img className='filterImg' src={item.thumb} alt="" />
                                                     </div>
-                                                    <div className="res-right col-md-9">
-                                                        <div className=" row">
-                                                            <div className="col-12 restaurant-name mt-2 mt-lg-0">{item.name}</div>
+                                                    <div className="res-right col-12 col-md-9">
+                                                        <div className=" row restaurant-name mt-2 mt-lg-0">
+                                                            {item.name}
                                                         </div>
-                                                        <div>
-                                                            <div className="place col  my-2">{item.locality}</div>
+                                                        <div className="place row  my-2">
+                                                            {item.locality}
                                                         </div>
-                                                        <div>
-                                                            <div className=" adrs col  text-truncate">{item.address}</div>
+                                                        <div className=" adrs row  ">
+                                                            {item.address}
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <hr style={{ border: "solid 2px #dedfe5" }} />
-                                                <div className="row">
-                                                    <div className="col-10 col-sm-5 col-lg-4">
-                                                        <div className="cuisine-cost">CUISINE :</div>
-                                                        <div className="cuisine-cost">COST FOR TWO :</div>
-                                                    </div>
-                                                    <div className="col-2 col-sm-7 col-lg-8">
-                                                        <div className="cuisine-cost-result">
+                                                <div className='container'>
+                                                    <div className='row'>
+                                                        <div className="cuisine-cost col-5">CUISINE</div>
+                                                        <div className="cuisine-cost col-1">:</div>
+                                                        <div className="cuisine-cost-result col-1">
                                                             {
                                                                 item.Cuisine.map((cuisineType) => {
                                                                     return (
@@ -315,8 +313,14 @@ class Filter extends Component {
                                                                 })
                                                             }
                                                         </div>
-                                                        <div className="cuisine-cost-result">{item.cost}</div>
                                                     </div>
+
+                                                    <div className='row'>
+                                                        <div className="cuisine-cost col-5">COST FOR TWO</div>
+                                                        <div className="cuisine-cost col-1">:</div>
+                                                        <div className="cuisine-cost-result col-1">{item.cost}</div>
+                                                    </div>
+
                                                 </div>
 
                                             </div>
