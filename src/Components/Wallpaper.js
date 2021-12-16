@@ -78,7 +78,7 @@ class Wallpaper extends Component {
             return null
         }
         return (
-            <ul className="suggestionBox container-fluid row">
+            <ul className="suggestionBox container-fluid row" style={{zIndex:"1000"}}>
                 {
                     suggestions.map(
                         (item, index) => {
@@ -187,7 +187,7 @@ class Wallpaper extends Component {
                                 <span style={{ backgroundColor: "white", height: "50px", width: "47px", borderRadius: ".25rem 0px 0px .25rem" }}>
                                     <i id="search-icon" className="bi bi-search" style={{ display: "inline-block", marginLeft: "15px", marginTop: "15px" }}></i>
                                 </span>
-                                <input className=" form-control search-opt" id="select-restaurant" type="text" placeholder="Search for restaurants" onMouseLeave={this.stopDisplaySuggestions} onMouseEnter={this.startDisplaySuggestions} onChange={this.onSearchTextChange} />
+                                <input className=" form-control search-opt" id="select-restaurant" type="text" placeholder="Search for restaurants" onChange={this.onSearchTextChange} />
                                 {
                                     this.renderSuggestions()
                                 }
